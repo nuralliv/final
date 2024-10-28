@@ -229,11 +229,12 @@
 		gap: 2rem;
 		margin-top: 2rem;
 	}
-.boxes{
-	display: flex;
-	flex-direction: column;
-	gap:30px ;
-}
+
+	.boxes {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
 
 	.box {
 		background-color: #25262d;
@@ -241,6 +242,7 @@
 		border-radius: 15px;
 		align-items: center;
 	}
+
 	h3 i {
 		margin-left: 5px;
 	}
@@ -472,6 +474,16 @@
 			height: 85vh;
 		}
 
+		.work-content {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px;
+		}
+
+		.row {
+			width: 48%;
+		}
+
 	}
 
 	@media (max-width: 1100px) {
@@ -568,30 +580,30 @@
 			/* for Firefox */
 		}
 
-				.work-content {
-					display: flex;
-					flex-wrap: nowrap;
-					overflow-x: auto;
-					scroll-snap-type: x mandatory;
-				}
-		
-				.work-content .row {
-					min-width: 100%;
-					flex: 0 0 auto;
-					scroll-snap-align: center;
-				}
-		
-				/* Hide scrollbar for most browsers */
-				.work-content::-webkit-scrollbar {
-					display: none;
-				}
-		
-				.work-content {
-					-ms-overflow-style: none;
-					/* for Internet Explorer and Edge */
-					scrollbar-width: none;
-					/* for Firefox */
-				}
+		.work-content {
+			display: flex;
+			flex-wrap: nowrap;
+			overflow-x: auto;
+			scroll-snap-type: x mandatory;
+		}
+
+		.work-content .row {
+			min-width: 100%;
+			flex: 0 0 auto;
+			scroll-snap-align: center;
+		}
+
+		/* Hide scrollbar for most browsers */
+		.work-content::-webkit-scrollbar {
+			display: none;
+		}
+
+		.work-content {
+			-ms-overflow-style: none;
+			/* for Internet Explorer and Edge */
+			scrollbar-width: none;
+			/* for Firefox */
+		}
 
 
 	}
